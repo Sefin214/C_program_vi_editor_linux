@@ -1,26 +1,20 @@
-/*3. Write a menu based C program with following options.
-	a. Find a number is Armstrong number or not.
-	b. Print range of Armstrong numbers.
-	c. Exit.*/
+/*3. 4. Write a menu based C program with following options.
+	a. Find a number is Shakuntala Devi's number or not.
+	b. Print range of Shakuntala Devi's numbers.
+	c. Exit. */
 #include <stdio.h>
 
-int Armstrong(int val){
-    int n=0, sum=0, temp=0, c=0, pow=1, i=0;
+int Factorial(int val){
+    int prod = 1, temp = 0, d=0, i=0, sum=0;
     temp = val;
     while(temp != 0){
-        n = temp % 10;
-        c++; 
-        temp = temp / 10;
-    }
-    temp=val;
-    while(temp != 0){
-        n = temp % 10;
-        for(i=0;i<c;i++){
-            pow=pow*n;
+        d=temp%10;
+        prod=1;
+        for(i=1;i<=d;i++){
+        prod=prod*i;
         }
-        sum = sum + pow; 
-        temp = temp / 10;
-        pow=1;
+        sum=sum+prod;
+        temp=temp/10;
     }
     if(sum == val)
         return(1);
@@ -32,23 +26,19 @@ int main(){
     char ch = ' ';
     int no = 0, f = 0;
     int lower = 0, upper = 0, i = 0; 
-
-
-        printf("\nEnter the choice for the following options\n[a] Find a number is Armstrong or Not\n[b] Print range of Armstrong Number\n[c] Exit\n");
+        printf("\nEnter the choice for the following options\n[a] Find a number is Shakuntala Devi's Number or Not\n[b] Print range of Shakuntala Devi's Number \n[c] Exit\n");
         printf("Enter the choice :");
-        
-      
         scanf(" %c", &ch); 
 
         switch(ch){
             case 'a': 
-                printf("Enter the number to check if armstrong or not: ");
+                printf("Enter the number to check if Shakuntala Devi's Number or not: ");
                 scanf("%d", &no);
-                f = Armstrong(no);
+                f = Factorial(no);
                 if(1 == f) 
-                    printf("%d is an Armstrong Number\n", no);
+                    printf("%d is a Shakuntala Devi's Number\n", no);
                 else
-                    printf("%d is Not an Armstrong Number\n", no);
+                    printf("%d is Not a Shakuntala Devi's Number\n", no);
                 break;  
                 
             case 'b': 
@@ -56,9 +46,9 @@ int main(){
 				scanf("%d", &lower);
 				printf("Enter upper limit: ");
                 scanf("%d", &upper);
-                printf("Armstrong numbers in range: ");
+                printf("Shakuntala Devi's Numbers in range: ");
                 for(i = lower; i <= upper; i++) {
-                    if(Armstrong(i) == 1) {
+                    if(1 == Factorial(i) ) {
                         printf("%d ", i);
                     }
                 }
