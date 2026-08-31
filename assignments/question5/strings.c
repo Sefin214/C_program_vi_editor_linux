@@ -20,7 +20,7 @@ int main(){
     char str3[50]=" ";
     int big=0,f=1;
     int lower = 0, upper = 0, i = 0, len=0, j=0, len1=0; 
-        printf("\nEnter the choice for the following options\n[a] Reverse a string. \n[b] Check if two strings are palindrome. \n[c] Compare two strings. \n[d] Copy a Strong \n[e] Tokenize a string\n[f] Concatenate two strings.\n");
+        printf("\nEnter the choice for the following options\n[a] Reverse a string. \n[b] Check if a string is palindrome. \n[c] Compare two strings. \n[d] Copy a Strong \n[e] Tokenize a string\n[f] Concatenate two strings.\n");
         printf("Enter the choice :");
         scanf(" %c", &ch); 
 
