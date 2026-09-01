@@ -26,11 +26,6 @@
 		
 
 */
-
-
-
-
-
 // --- globals ---
 char postfix[25];
 int pIndex = -1;
