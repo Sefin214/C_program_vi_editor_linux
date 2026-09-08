@@ -38,15 +38,24 @@ int main(){
 		token=infix[i];
 		if((token>=48 && token<=57) || (token>=65 && token<=90) || (token>=97 && token<=122))
 			postfix[pos++]=token;
-		else if(top==-1 || preference(token)<preference(stack[top]))
+		else if(token=='(')
 			push(token);
+		else if(token==')'){
+			while(top!=-1 && stack[top]!='(' && preference(token)<=preference(stack[top]))
+				postfix[pos++]=pop();
+			if(top!=-1 && stack[top]=='(')
+				pop();
+		}
 		else{
-			postfix[pos++]=pop();
-			push(token);
+			while(top!=-1 && preference(token)<=preference(stack[top]) && stack[top]!='(')
+				postfix[pos++]=pop();
+				push(token);
 		}
 	i++;
 	}
-	postfix[--pos]=pop();
+	while(top!=-1)
+		postfix[pos++]=pop();
+	postfix[pos]='\0';
 	printf("INFIX EXPRESSION IS: %s\n",infix);	
 	printf("POSTFIX EXPRESSION IS: %s\n",postfix);
 	return(0);
