@@ -1,0 +1,74 @@
+C Practice Questions Level 2:
+
+1. Take a digit/number from user and print the pattern.
+	Ex: n = 4
+
+	Expected output:
+	*
+	**
+	***
+	****
+
+2. Similar to assignment one.
+	Ex: n=4
+	********
+	***  ***
+	**    **
+	*      *
+	**    **
+        ***  ***
+        ********
+
+
+	    *
+           * *
+          * * *
+         * * * *
+          * * *
+           * *
+            *
+
+3. Write a menu based C program with following options.
+	a. Find a number is Armstrong number or not.
+	b. Print range of Armstrong numbers.
+	c. Exit.
+
+
+4. Write a menu based C program with following options.
+	a. Find a number is Shakuntala Devi's number or not.
+	b. Print range of Shakuntala Devi's numbers.
+	c. Exit. 
+
+
+5. Implement C program with following menu-choices:
+	a. Reverse a string.
+	b. Check if string is palindrome.
+	c. Compare two strings.
+	d. String copy (Hint: strcpy)
+	e. String-tokenizer. ( ex strtok)
+	f. String Concatenate. ( Hint: strcat)
+	
+6. Implement following on expressions:
+	a. Infix to prefix.
+	b. prefix to postfix.
+	c. prefix to infix.
+	d. postfix to prefix.
+	e. postfix to infix.
+
+7. Implement following using command line arguments :
+	Ex: myEx Welcome
+	Output:
+		W e l c o m e
+                e           m
+                l           o
+                c           c
+                o           l
+                m           e
+                e m o c l e W
+
+8. Implement following Queue's using arrays :
+	a. Regular Queue.
+	b. Circular Queue.
+	c. Priority Queue.
+	d. Double Ended Queue.
+ 

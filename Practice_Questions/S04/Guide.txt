@@ -1,0 +1,20 @@
+CONTENTS
+
+P4.1 Predict: int a=5,b=3; printf("%d",a+b*2);
+p4.2 Predict: int a=5; printf("%d ",a++); printf("%d ",a); printf("%d",++a);
+P4.3 Construct five expressions where precedence changes the result when parentheses are added.
+
+-------------------------------------------------------------------------------------------------
+
+A4.1 Build a two-number calculator using +, -, *, / and %.
+A4.2 Find the largest of two numbers using the relational operator.
+A4.3 Check whether a number is even using %.
+A4.4 Demonstrate &&, || and ! with meaningful conditions.
+A4.5 Use all compound assignment operators in a small demonstration.
+A4.6 Demonstrate pre-increment, post-increment, pre-decrement and post-decrement.
+A4.7 Find the maximum of two numbers using the ternary operator.
+A4.8 Evaluate ten expressions by hand before running them.
+A4.9 Add parentheses to expressions and compare results.
+A4.10 Write a menu-driven calculator using switch and arithmetic operators.
+
+-------------------------------------------------------------------------------------------------
