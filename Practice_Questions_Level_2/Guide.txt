@@ -1,5 +1,18 @@
 C Practice Questions Level 2:
 
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Note*: For folders with multiple files, I have made the code in seperate files as follows:
+1. main.c - holds the main program.
+2. header.h - holds the function declarations used in the program.
+3. functions.c - holds the functions used for the main program.
+4. functions.o - this is just the object file created of the functions.c
+
+To run the program compile the main file along with object file of functions as shown below:
+"gcc -Wall -Wextra <mainprogramfilename>.c <functionfilename>.o -o <outputfilename>"
+
+Programs without multiple functions does not have seperate files holding functions or headers. The names of files are different according to the session name and question number.
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
 1. Take a digit/number from user and print the pattern.
 	Ex: n = 4
 
