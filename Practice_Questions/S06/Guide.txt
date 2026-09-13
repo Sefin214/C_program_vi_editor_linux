@@ -1,0 +1,15 @@
+A6.1 Check positive, negative or zero.
+A6.2 Find the largest of three numbers using nested if.
+A6.3 Check leap year.
+A6.4 Build a grade calculator.
+A6.5 Check vowel/consonant and uppercase/lowercase.
+A6.6 Create a calculator using switch-case.
+A6.7 Print 1 to 100 using a for loop.
+A6.8 Print all even and odd numbers in a range.
+A6.9 Find factorial, sum of digits and reverse of a number.
+A6.10 Check prime, palindrome and Armstrong numbers.
+A6.11 Generate Fibonacci series.
+A6.12 Find GCD and LCM.
+A6.13 Use break to terminate a loop on a condition.
+A6.14 Use continue to skip selected values.
+A6.15 Create a menu-driven program with repeated operation until Exit.
