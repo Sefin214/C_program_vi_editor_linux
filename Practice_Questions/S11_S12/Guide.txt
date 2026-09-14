@@ -1,0 +1,25 @@
+A10.1 Read and display a 1-D array.
+A10.2 Find sum, average, maximum and minimum.
+A10.3 Find second largest and second smallest.
+A10.4 Count even, odd, positive and negative elements.
+A10.5 Reverse and copy an array.
+A10.6 Compare two arrays.
+A10.7 Merge two arrays.
+A10.8 Find duplicates and their frequencies.
+A10.9 Remove duplicates.
+A10.10 Linear search.
+A10.11 Binary search on a sorted array.
+A10.12 Bubble sort ascending and descending.
+A10.13 Selection sort.
+A10.14 Insertion sort.
+A10.15 Insert an element at a position.
+A10.16 Delete an element at a position.
+A10.17 Rotate an array left/right.
+A10.18 Find a missing number.
+A10.19 Find a pair with a target sum.
+A10.20 Matrix addition and subtraction.
+A10.21 Matrix multiplication.
+A10.22 Matrix transpose.
+A10.23 Find row/column sums.
+A10.24 Check identity and symmetric matrices.
+A10.25 Detect a sparse matrix.
