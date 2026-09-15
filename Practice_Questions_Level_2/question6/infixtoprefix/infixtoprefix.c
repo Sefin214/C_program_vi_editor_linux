@@ -28,12 +28,33 @@ int preference(char token){
 		return(0);
 }
 
+void strrev(char *expression){
+	int len=0, i=0;
+	char temp=' ';
+	len=strlen(expression);
+	for(i=0;i<len/2;i++){
+		temp=expression[i];
+		expression[i]=expression[len-i-1];
+		expression[len-i-1]=temp;
+	}
+}
+
 int main(){
-	char infix[size]="a+b*c";
+	char infix[size]="a*(b+c)-d";
 	char postfix[size];
 	int i=0;
 	int pos=0;
 	char token;
+	printf("INFIX EXPRESSION IS: %s\n",infix);	
+	strrev(infix);
+	while(infix[i]!='\0'){
+		if(infix[i]=='(')
+			infix[i]=')';
+		else if(infix[i]==')')
+				infix[i]='(';
+	i++;
+	}
+	i=0;
 	while(infix[i]!='\0'){
 		token=infix[i];
 		if((token>=48 && token<=57) || (token>=65 && token<=90) || (token>=97 && token<=122))
@@ -49,14 +70,14 @@ int main(){
 		else{
 			while(top!=-1 && preference(token)<=preference(stack[top]) && stack[top]!='(')
 				postfix[pos++]=pop();
-				push(token);
+			push(token);
 		}
 	i++;
 	}
 	while(top!=-1)
 		postfix[pos++]=pop();
 	postfix[pos]='\0';
-	printf("INFIX EXPRESSION IS: %s\n",infix);	
+	strrev(postfix);
 	printf("POSTFIX EXPRESSION IS: %s\n",postfix);
 	return(0);
 }	

@@ -29,7 +29,7 @@ int preference(char token){
 }
 
 int main(){
-	char infix[size]="a+b*c";
+	char infix[size]="a*(b+c)-d";
 	char postfix[size];
 	int i=0;
 	int pos=0;
@@ -49,7 +49,7 @@ int main(){
 		else{
 			while(top!=-1 && preference(token)<=preference(stack[top]) && stack[top]!='(')
 				postfix[pos++]=pop();
-				push(token);
+			push(token);
 		}
 	i++;
 	}
