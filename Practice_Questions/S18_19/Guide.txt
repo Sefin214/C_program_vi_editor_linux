@@ -1,0 +1,13 @@
+A15.1 Create a Student structure and display one record.
+A15.2 Store and display five students.
+A15.3 Find highest/lowest marks.
+A15.4 Calculate average marks.
+A15.5 Search a student by roll number.
+A15.6 Sort students by marks.
+A15.7 Sort students by name.
+A15.8 Create a nested address structure inside Student.
+A15.9 Pass a structure to a function.
+A15.10 Return a structure from a function.
+A15.11 Use an array of structures.
+A15.12 Use a pointer to a structure.
+A15.13 Inspect sizeof(struct) and discuss padding.
