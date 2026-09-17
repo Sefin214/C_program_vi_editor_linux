@@ -1,0 +1,11 @@
+A13.1 Print a variable's address using a pointer.
+A13.2 Read a value through a pointer.
+A13.3 Modify a variable through a pointer.
+A13.4 Use int*, char*, float* and double*.
+A13.5 Demonstrate pointer increment/decrement.
+A13.6 Traverse an array using a pointer.
+A13.7 Sum an array using pointer arithmetic.
+A13.8 Find maximum using pointers.
+A13.9 Reverse an array using pointers.
+A13.10 Implement string length using a char pointer.
+A13.11 Compare array indexing and pointer notation.
