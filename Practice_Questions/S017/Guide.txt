@@ -1,0 +1,7 @@
+A17.1 Create a union with int, float and char members.
+A17.2 Print sizeof the union and its members.
+A17.3 Write one member and inspect another member carefully.
+A17.4 Compare sizeof a structure and equivalent union.
+A17.5 Create a union representing sensor data alternatives.
+A17.6 Create a union for a communication payload.
+A17.7 Write a menu that stores one selected union member at a time.
