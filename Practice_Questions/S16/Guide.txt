@@ -1,0 +1,8 @@
+A16.1 Modify structure members through a structure pointer.
+A16.2 Create an array of structure pointers.
+A16.3 Create nested structures and access nested members.
+A16.4 Define bitfields for status flags.
+A16.5 Create a simulated hardware status register with bitfields.
+A16.6 Compare bitfield storage with a normal integer flag representation.
+A16.7 Pass a structure pointer to a function that modifies selected members.
+
