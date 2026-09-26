@@ -1,0 +1,10 @@
+A19.1 Define PI, MAX and MIN with object-like macros.
+A19.2 Create SQUARE, CUBE and MAX macros.
+A19.3 Demonstrate conditional compilation.
+A19.4 Use #ifdef, #ifndef, #if, #else and #endif.
+A19.5 Create math_utils.h and math_utils.c.
+A19.6 Create string_utils.h and string_utils.c.
+A19.7 Add include guards.
+A19.8 Build a multi-file project using a Makefile.
+A19.9 Create debug-only logging controlled by a macro.
+A19.10 Read a small compiler-generated assembly output and identify function labels/instructions at
