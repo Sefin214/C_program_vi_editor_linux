@@ -1,0 +1,13 @@
+Capstone 1: Calculator
+---> Deliverables: source files, header files where appropriate, Makefile, README, sample input/output and a
+short test checklist.
+
+Capstone 2: Student Management System
+---> Structures, arrays, strings, functions, search, sorting
+Deliverables: source files, header files where appropriate, Makefile, README, sample input/output and a
+short test checklist.
+
+Capstone 3: Student Database
+---> Structures, binary files, add/search/update/delete
+Deliverables: source files, header files where appropriate, Makefile, README, sample input/output and a short test checklist.
+
