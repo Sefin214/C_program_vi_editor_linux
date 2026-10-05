@@ -84,4 +84,22 @@ Programs without multiple functions does not have seperate files holding functio
 	b. Circular Queue.
 	c. Priority Queue.
 	d. Double Ended Queue.
- 
+9. String Manipulation Functions test app:
+	 
+10. Implement following on single-linked-list:
+	a. Insert at the beginning.
+	b. Insert at the given position.
+	c. Insert at the end.
+	d. Insert next to given node.
+	e. Insert before the given node.
+	f. Delete at the beginning.
+	g. Delete at the given position.
+	h. Delete at the end.
+	i. Delete next to given node.
+	j. Delete before the given node.
+	k. Search an element.
+	l. Reverse the linked-list.
+	
+11. Implement Dynamic Stack.
+12. Add two huge positive numbers using linked-list.
+
