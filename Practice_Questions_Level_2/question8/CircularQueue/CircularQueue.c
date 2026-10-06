@@ -9,8 +9,8 @@ void enqueue(int value)
 {
     if (rear == SIZE - 1)
     {
-        printf("Queue Overflow!\n");
-        return;
+	if(front > -1)
+		rear = 0;
     }
 
     if (front == -1)
