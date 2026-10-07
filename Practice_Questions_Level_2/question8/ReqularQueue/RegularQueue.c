@@ -1,33 +1,35 @@
 #include <stdio.h>
 #define SIZE 5
 
-int queue[SIZE];
-int front = -1;
+int queue[SIZE];   //Array to hold the queue elements
+
+//initialising front and rear to -1 initially
+int front = -1;     
 int rear = -1;
 
+//Enqueue function
 void enqueue(int value)
 {
-    if (rear == SIZE - 1)
+    if (rear == SIZE - 1)    //if rear reaches the maximum size
     {
         printf("Queue Overflow!\n");
         return;
     }
 
-    if (front == -1)
+    if (front == -1)        //if front is -1 => empty queue
     {
         front = 0;
     }
-
     rear++;
-    queue[rear] = value;
-
+    queue[rear] = value;     //rear is incremented and at the position of rear of queue value is added
     printf("%d inserted\n", value);
 }
 
+//Dequeue function
 int dequeue(void)
 {
     int value;
-    if (front == -1)
+    if (front == -1)        //if front is -1 => nothing to dequeue
     {
         printf("Queue Underflow!\n");
         return -1;
@@ -45,6 +47,7 @@ int dequeue(void)
     return value;
 }
 
+//Display the Queue
 void display(void)
 {
     int i;

@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #define SIZE 5
 
 int queue[SIZE];
@@ -7,18 +8,21 @@ int rear = -1;
 
 void enqueue(int value)
 {
-    if (rear == SIZE - 1)
-    {
-	if(front > -1)
-		rear = 0;
-    }
-
     if (front == -1)
     {
         front = 0;
+        rear = 0;
+    }
+    else if ((rear + 1) % SIZE == front)
+    {
+        printf("Queue Overflow!\n");
+        return;
+    }
+    else
+    {
+        rear = (rear + 1) % SIZE;
     }
 
-    rear++;
     queue[rear] = value;
 
     printf("%d inserted\n", value);
@@ -27,6 +31,7 @@ void enqueue(int value)
 int dequeue(void)
 {
     int value;
+
     if (front == -1)
     {
         printf("Queue Underflow!\n");
@@ -34,12 +39,15 @@ int dequeue(void)
     }
 
     value = queue[front];
-    front++;
 
-    if (front > rear)
+    if (front == rear)
     {
         front = -1;
         rear = -1;
+    }
+    else
+    {
+        front = (front + 1) % SIZE;
     }
 
     return value;
@@ -57,9 +65,16 @@ void display(void)
 
     printf("Queue: ");
 
-    for (i = front; i <= rear; i++)
+    i = front;
+
+    while (1)
     {
         printf("%d ", queue[i]);
+
+        if (i == rear)
+            break;
+
+        i = (i + 1) % SIZE;
     }
 
     printf("\n");
@@ -73,7 +88,7 @@ int main(void)
     while (1)
     {
         printf("\n");
-        printf("===== QUEUE MENU =====\n");
+        printf("===== CIRCULAR QUEUE MENU =====\n");
         printf("1. Enqueue\n");
         printf("2. Dequeue\n");
         printf("3. Display\n");
