@@ -7,11 +7,8 @@
 	e. String-tokenizer. ( ex strtok)
 	f. String Concatenate. ( Hint: strcat)
 	*/
-#include <stdio.h>
 
-int Factorial(int val){
-    
-}
+#include <stdio.h>
 
 int main(){ 
     char ch = ' ';
@@ -26,105 +23,107 @@ int main(){
 
         switch(ch){
             case 'a': 
-                        printf("Enter the String\n--------------------------------\n");
-                        scanf("%s", str1);
-                        while (str1[len] != '\0')
-                            len++;
-                        for(i=len;i>0;i--){
-                            str2[i]=str1[j];
-                            j++;
-                        }
-                        printf("--------------------------------\nReversed String: %s \n--------------------------------\n", str2);
-                        break;
+                    printf("Enter the String\n--------------------------------\n");
+                    scanf("%s", str1);
+                    while (str1[len] != '\0')  //to find length of string
+                        len++;
+                    for(i=len;i>0;i--){    //reverses a string and stores to a new string
+                        str2[i]=str1[j];
+                        j++;
+                    }
+                    printf("--------------------------------\nReversed String: %s \n--------------------------------\n", str2);
+                    break;
                 
             case 'b': 
-                        printf("Enter the String\n--------------------------------\n");
-                        scanf("%s", str1);
-                        while (str1[len] != '\0')
-                            len++;
-                        j=len-1;
-                        while(i<j){
-                            if(str1[i]!=str1[j]){
-                                f=0;
-                                break;
-                            }
-                            i++;
-                            j--;
-                        }
-                        if(1==f)
-                            printf("\n--------------------------------\nString is Pallindrome\n--------------------------------\n");
-                        else
-                            printf("\n--------------------------------\nString is not Pallindrome\n--------------------------------\n");
-                        break;
-                
-            case 'c':   printf("Enter the String 1\n--------------------------------\n");
-                        scanf("%s", str1); 
-                        printf("Enter the String 2\n--------------------------------\n");
-                        scanf("%s", str2);
-                        while (str1[len] != '\0')
-                            len++;
-                        while (str1[len1] != '\0')
-                            len1++;
-                        if(len!=len1){
-                            printf("\n--------------------------------\nStrings are not the same\n--------------------------------\n");
+                    printf("Enter the String\n--------------------------------\n");
+                    scanf("%s", str1);
+                    while (str1[len] != '\0')   //find length
+                        len++;
+                    j=len-1;
+                    while(i<j){
+                        if(str1[i]!=str1[j]){   //checks if same characters by iterating from front and back
+                            f=0;
                             break;
                         }
-                        while(str1[i]!='\0'&&str2[i]!='\0'){
-                            if(str1[i]!=str2[i]){
-                                f=0;
-                                break;
-                            }
-                            i++;
-                        }
-                        if(1==f)
-                            printf("\n--------------------------------\nStrings are equal\n--------------------------------\n");
-                        else
-                            printf("\n--------------------------------\nStrings are not equal\n--------------------------------\n");
+                        i++;
+                        j--;
+                    }
+                    if(1==f)
+                        printf("\n--------------------------------\nString is Pallindrome\n--------------------------------\n");
+                    else
+                        printf("\n--------------------------------\nString is not Pallindrome\n--------------------------------\n");
+                    break;
+            
+            case 'c':   
+                    printf("Enter the String 1\n--------------------------------\n");
+                    scanf("%s", str1); 
+                    printf("Enter the String 2\n--------------------------------\n");
+                    scanf("%s", str2);
+                    while (str1[len] != '\0')
+                        len++;
+                    while (str1[len1] != '\0')
+                        len1++;
+                    if(len!=len1){
+                        printf("\n--------------------------------\nStrings are not the same\n--------------------------------\n");
                         break;
+                    }
+                    while(str1[i]!='\0'&&str2[i]!='\0'){   //compares two strings
+                        if(str1[i]!=str2[i]){
+                            f=0;
+                            break;
+                        }
+                        i++;
+                    }
+                    if(1==f)
+                        printf("\n--------------------------------\nStrings are equal\n--------------------------------\n");
+                    else
+                        printf("\n--------------------------------\nStrings are not equal\n--------------------------------\n");
+                    break;
             case 'd': 
-                        printf("Enter the String to be copied\n--------------------------------\n");
-                        scanf("%s", str1);
-                        while (str1[len] != '\0')
-                            len++;
-                        for(i=0;i<len;i++){
-                            str2[i]=str1[i];
-                        }
-                        printf("--------------------------------\nCopied String: %s \n--------------------------------\n", str2);
-                        break;
+                    printf("Enter the String to be copied\n--------------------------------\n");
+                    scanf("%s", str1);
+                    while (str1[len] != '\0')
+                        len++;
+                    for(i=0;i<len;i++){                     
+                        str2[i]=str1[i];                 //copies string to another string
+                    }
+                    printf("--------------------------------\nCopied String: %s \n--------------------------------\n", str2);
+                    break;
             case 'e': 
-                        printf("Enter the String to be Tokenized\n--------------------------------\n");
-                        scanf("%s", str1);
-                        printf("Enter the Token\n--------------------------------\n");
-                        scanf(" %c", &ch);
-                        printf("\n--------------------------------\n");
-                        while (str1[len] != '\0')
-                            len++;
-                        for(i=0;i<len;i++){
-                            if(str1[i]!=ch)
-                                printf("%c",str1[i]);
-                            else
-                                printf("\n");
-                        }
-                        printf("\n--------------------------------\n");
-                        break;
+                    printf("Enter the String to be Tokenized\n--------------------------------\n");
+                    scanf("%s", str1);
+                    printf("Enter the Token\n--------------------------------\n");
+                    scanf(" %c", &ch);
+                    printf("\n--------------------------------\n");
+                    while (str1[len] != '\0')
+                        len++;
+                    for(i=0;i<len;i++){
+                        if(str1[i]!=ch)                
+                            printf("%c",str1[i]);      //prints if the current character is not tokenizer
+                        else
+                            printf("\n");              //if not tokenizer, prints a new line
+                    }
+                    printf("\n--------------------------------\n");
+                    break;
 
-            case 'f':   printf("Enter the String 1\n--------------------------------\n");
-                        scanf("%s", str1); 
-                        printf("Enter the String 2\n--------------------------------\n");
-                        scanf("%s", str2);
-                        while (str1[len] != '\0')
-                            len++;
-                        while(str2[j]!='\0'){
-                            str1[len]=str2[j];
-                            len++;
-                            j++;
-                        }
-                        printf("--------------------------------\nConcatenated String: %s \n--------------------------------\n", str1);
-                        break;
+            case 'f':   
+                    printf("Enter the String 1\n--------------------------------\n");
+                    scanf("%s", str1); 
+                    printf("Enter the String 2\n--------------------------------\n");
+                    scanf("%s", str2);
+                    while (str1[len] != '\0')
+                        len++;
+                    while(str2[j]!='\0'){
+                        str1[len]=str2[j];                 //concatenates a string to the end of another string
+                        len++;
+                        j++;
+                    }
+                    printf("--------------------------------\nConcatenated String: %s \n--------------------------------\n", str1);
+                    break;
             default:
-                        printf("Invalid choice! Try again.\n");
-                        break;
+                    printf("Invalid choice! Try again.\n");
+                    break;
         }
     
     return(0);
-	}
+}
