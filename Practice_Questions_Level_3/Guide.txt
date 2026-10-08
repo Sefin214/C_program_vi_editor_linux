@@ -1,0 +1,27 @@
+9. String Manipulation Functions test app:
+	All functions mentioned in "AssignmentQ09_Common String Functions.doc".	 
+
+
+10. Implement following on single-linked-list:
+	a. Insert at the beginning.
+	b. Insert at the given position.
+	c. Insert at the end.
+	d. Insert next to given node.
+	e. Insert before the given node.
+	f. Delete at the beginning.
+	g. Delete at the given position.
+	h. Delete at the end.
+	i. Delete next to given node.
+	j. Delete before the given node.
+	k. Search an element.
+	l. Reverse the linked-list.
+	
+11. Implement Dynamic Stack.
+12. Add two huge positive numbers using linked-list.
+13. Create Employee structure in Heap memory, and then create database and save in a "emp.dat" file.
+14. implement 'cp' command tool of your own, using file-handling concepts and with following options:
+	a. 1 character at a time. (Hint: fgetc and fputc)
+	b. 1 line or n-lines at a time. (Hint: getline, fgets and fputs)
+	c. reverse copy. (Hint: fseek, ftell, fgets)
+
+15. Implement pascal's triangle and display after storing in a file.

@@ -1,17 +1,12 @@
-C Practice Questions Level 2:
+C (main) Assignments:
 
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-Note*: For folders with multiple files, I have made the code in seperate files as follows:
-1. main.c - holds the main program.
-2. header.h - holds the function declarations used in the program.
-3. functions.c - holds the functions used for the main program.
-4. functions.o - this is just the object file created of the functions.c
+File Navigation
+     ||
+question number 
+	|___________ .c file
+	|___________ ./outputfile
 
-To run the program compile the main file along with object file of functions as shown below:
-"gcc -Wall -Wextra <mainprogramfilename>.c <functionfilename>.o -o <outputfilename>"
-
-Programs without multiple functions does not have seperate files holding functions or headers. The names of files are different according to the session name and question number.
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+Note* Some questions have folders within each folder to seperate subquestions.
 
 1. Take a digit/number from user and print the pattern.
 	Ex: n = 4
@@ -52,8 +47,8 @@ Programs without multiple functions does not have seperate files holding functio
 	b. Print range of Shakuntala Devi's numbers.
 	c. Exit. 
 
-
-5. Implement C program with following menu-choices:
+8/cd 
+5. Implement C program with following menu-choices (shouldn't use built-ins):
 	a. Reverse a string.
 	b. Check if string is palindrome.
 	c. Compare two strings.
@@ -79,27 +74,8 @@ Programs without multiple functions does not have seperate files holding functio
                 m           e
                 e m o c l e W
 
-8. Implement following Queue's using arrays :
+8. (Optional Assignment) Implement following Queue's using arrays :
 	a. Regular Queue.
 	b. Circular Queue.
 	c. Priority Queue.
 	d. Double Ended Queue.
-9. String Manipulation Functions test app:
-	 
-10. Implement following on single-linked-list:
-	a. Insert at the beginning.
-	b. Insert at the given position.
-	c. Insert at the end.
-	d. Insert next to given node.
-	e. Insert before the given node.
-	f. Delete at the beginning.
-	g. Delete at the given position.
-	h. Delete at the end.
-	i. Delete next to given node.
-	j. Delete before the given node.
-	k. Search an element.
-	l. Reverse the linked-list.
-	
-11. Implement Dynamic Stack.
-12. Add two huge positive numbers using linked-list.
-
