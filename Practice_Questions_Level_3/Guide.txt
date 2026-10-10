@@ -1,3 +1,30 @@
+This is like Assignment 2
+
+File structure
+
+Folder
+   |_____A2Q9
+           |_____A2Q9.c
+           |_____A2Q9out
+   |_____A2Q10
+           |_____A2Q10.c
+           |_____A2Q10out
+   |_____A2Q11
+           |_____A2Q11.c
+           |_____A2Q11out
+   |_____A2Q12
+           |_____A2Q12.c
+           |_____A2Q12out
+   |_____A2Q13
+           |_____A2Q13.c
+           |_____A2Q13out
+   |_____A2Q14
+           |_____A2Q14.c
+           |_____A2Q14out
+   |_____A2Q15
+           |_____A2Q15.c
+           |_____A2Q15out
+           
 9. String Manipulation Functions test app:
 	All functions mentioned in "AssignmentQ09_Common String Functions.doc".	 
 
